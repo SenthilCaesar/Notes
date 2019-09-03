@@ -1,0 +1,16 @@
+We think, the Deep Neural Network approach implemented in the attached paper is promising and a good starting point for segmenting choroid plexus.
+People have used this Deep Learning approach in their research for segmenting small organs like Pancreas, Hippocampus subfield and Lung nodules.
+
+Problem:
+Choroid plexus shows large inter-patient variation in term of shapes and sizes. 
+Choroid Plexus boundary delineation is a difficult task due to shape-variability and poor tissue contrast.
+Choroid Plexus segmentation constitutes a difficult task due to low tissue contrast and large variability in organ shape and size. 
+
+Objective:
+3D CNN which could learn the geometry of choroid plexus.
+Incorporate anatomical prior knowledge about organ shape and location.
+The model should give more importance to the choroid plexus channels/feature maps and also the location of the choroid plexus.
+Train the network on smaller 3D regions centered around the choroid plexus instead of the whole T1 Brain MRI Image. This step avoids class imbalance.
+Segmentation frameworks that rely on additional preceding object localization models to simplify the task into separate localization and subsequent segmentation steps.
+Reduce the search space significantly by ruling out parts of scans that are very unlikely to contain choroid plexus, since choroid plexus is expected to be inside the ventricles.
+An architecture for more non-rigid anatomical organs such as choroid plexus, because their topologies varies much, meaning there is a need to learn many low-resolution high-level abstract features.
